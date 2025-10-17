@@ -1,13 +1,15 @@
 {
   "compilerOptions": {
-    "lib": ["ESNext"],
     "target": "ESNext",
+    "lib": ["ESNext"],
+
     "module": "Preserve",
     "moduleDetection": "force",
     "jsx": "react-jsx",
     "allowJs": true,
 
     "types": ["bun-types"],
+
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": true,
@@ -15,5 +17,5 @@
 
     "strict": true,
     "skipLibCheck": true
-  },
+  }
 }
