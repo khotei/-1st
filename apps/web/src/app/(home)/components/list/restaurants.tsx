@@ -1,10 +1,14 @@
+import NextLink from "next/link"
+
 import {
   Badge,
   Box,
   Button,
   Card,
+  Flex,
   HStack,
   Image,
+  Link,
   VStack,
 } from "@1st/components/chakra"
 import { map } from "@1st/dash"
@@ -61,8 +65,19 @@ export const Restaurants = (
                 </VStack>
               </Card.Body>
               <Card.Footer>
-                <Button>Menu</Button>
-                <Button>Reserve</Button>
+                <VStack align="stretch" gap={2} w="full">
+                  <Flex gap={2}>
+                    <Button>Menu</Button>
+                    <Button>Reserve</Button>
+                  </Flex>
+                  <Flex justify="flex-end">
+                    <Link asChild variant="underline">
+                      <NextLink href={`/${restaurant.id}`}>
+                        More &gt;
+                      </NextLink>
+                    </Link>
+                  </Flex>
+                </VStack>
               </Card.Footer>
             </Box>
           </Card.Root>

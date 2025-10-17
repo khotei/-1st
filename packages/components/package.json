@@ -7,6 +7,7 @@
     "./hooks": "./src/hooks/index.ts"
   },
   "scripts": {
+    "tsc": "tsc --noEmit",
     "clean": "rm -rf node_modules"
   },
   "dependencies": {
@@ -17,6 +18,7 @@
     "react-use": "17.6.0"
   },
   "devDependencies": {
+    "typescript": "catalog:runtime",
     "babel-plugin-react-compiler": "catalog:client",
     "@types/react": "catalog:client",
     "@types/react-dom": "catalog:client"

@@ -2,9 +2,13 @@
   "name": "@1st/env",
   "main": "src/index.ts",
   "scripts": {
+    "tsc": "tsc --noEmit",
     "clean": "rm -rf node_modules"
   },
   "dependencies": {
     "dotenv": "17.2.3"
+  },
+  "devDependencies": {
+    "typescript": "catalog:runtime"
   }
 }

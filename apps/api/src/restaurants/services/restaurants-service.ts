@@ -1,20 +1,36 @@
+import { first } from "@1st/dash"
 import type { z } from "@1st/dash/zod"
 import { drizzle, orm, schema } from "@1st/database/drizzle"
 
-import type { restaurantSearchQuerySchema } from "../models/restaurants-model.ts"
+import type {
+  restaurantParamsSchema,
+  restaurantQuerySchema,
+} from "../models/restaurants-model.ts"
 
 export const searchRestaurants = (
-  search: z.infer<typeof restaurantSearchQuerySchema>,
-) => {
-  return drizzle
+  query: z.infer<typeof restaurantQuerySchema>,
+) =>
+  drizzle
     .select()
     .from(schema.restaurants)
     .where(
-      search.search
+      query.search
         ? orm.ilike(
             schema.restaurants.name,
-            `${search.search}%`,
+            `${query.search}%`,
           )
         : undefined,
     )
-}
+
+export const findRestaurant = async (
+  params: z.infer<typeof restaurantParamsSchema>,
+) =>
+  first(
+    await drizzle
+      .select()
+      .from(schema.restaurants)
+      .where(
+        orm.eq(schema.restaurants.id, params.restaurantId),
+      )
+      .limit(1),
+  ) ?? null

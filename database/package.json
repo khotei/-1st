@@ -9,6 +9,7 @@
     "db:push": "bunx --bun drizzle-kit push --config=src/drizzle/drizzle-config.ts",
     "db:seed": "bun src/scripts/seed.ts",
     "db:reset": "bun src/scripts/reset.ts",
+    "tsc": "tsc --noEmit",
     "clean": "rm -rf node_modules"
   },
   "dependencies": {
@@ -20,6 +21,7 @@
     "drizzle-seed": "0.3.1"
   },
   "devDependencies": {
+    "typescript": "catalog:runtime",
     "drizzle-kit": "0.31.5",
     "bun-types": "catalog:runtime",
     "@faker-js/faker": "10.1.0"

@@ -4,6 +4,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "tsc": "tsc --noEmit",
     "clean": "rm -rf node_modules && rm -rf .next && rm -rf build"
   },
   "dependencies": {
@@ -20,7 +21,7 @@
   "devDependencies": {
     "@1st/api": "workspace:*",
     "babel-plugin-react-compiler": "catalog:client",
-    "typescript": "5.9.3",
+    "typescript": "catalog:runtime",
     "@types/react": "catalog:client",
     "@types/react-dom": "catalog:client",
     "@types/node": "24.7.2"

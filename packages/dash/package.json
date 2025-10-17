@@ -7,6 +7,7 @@
     "./zod": "./src/zod.ts"
   },
   "scripts": {
+    "tsc": "tsc --noEmit",
     "clean": "rm -rf node_modules"
   },
   "dependencies": {
@@ -16,6 +17,7 @@
     "type-fest": "5.0.1"
   },
   "devDependencies": {
+    "typescript": "catalog:runtime",
     "@types/lodash": "4.17.20"
   }
 }

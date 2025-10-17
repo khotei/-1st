@@ -19,6 +19,7 @@ export const drizzle = createDrizzle(
     schema,
   },
 )
+
 export { schema }
 
 export const migrate = partial(_migrate, [
