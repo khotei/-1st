@@ -10,7 +10,7 @@ neonConfig.poolQueryViaFetch = true
 export const drizzleConfig = {
   casing: "snake_case",
   dbCredentials: {
-    url: Env.DATABASE ?? "",
+    url: Env["DATABASE"] ?? "",
   },
   dialect: "postgresql",
   out: path.resolve(import.meta.dir, "../../migrations"),

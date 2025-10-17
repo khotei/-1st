@@ -1,40 +1,27 @@
 {
+  "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "target": "ES2017",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "jsx": "preserve",
 
-    "module": "Preserve",
-    "moduleDetection": "force",
-    "jsx": "react-jsx",
-    "allowJs": true,
-
-    "types": ["bun-types"],
     "plugins": [
       {
         "name": "next"
       }
     ],
 
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "verbatimModuleSyntax": true,
-    "noEmit": true,
-
     "paths": {
       "@/*": ["./src/*"]
     },
 
-    "strict": true,
-    "skipLibCheck": true,
-    "incremental": true
   },
   "include": [
     "next-env.d.ts",
-    ".next/dev/types/**/*.ts",
-    "**/*.mts",
+    ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts"
+    "**/*.mts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", ".next"]
 }

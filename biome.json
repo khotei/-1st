@@ -31,7 +31,8 @@
     "includes": [
       "**",
       "!**/package.json",
-      "!**/tsconfig.json"
+      "!**/tsconfig.json",
+      "!tsconfig.base.json"
     ]
   },
   "formatter": {
@@ -43,9 +44,12 @@
   },
   "linter": {
     "rules": {
+      "complexity": {
+        "useLiteralKeys": "info"
+      },
       "recommended": true,
       "style": {
-        "useConsistentCurlyBraces": "error"
+        "useConsistentCurlyBraces": "off"
       }
     }
   },
