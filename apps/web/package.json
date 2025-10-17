@@ -24,6 +24,7 @@
     "typescript": "catalog:runtime",
     "@types/react": "catalog:client",
     "@types/react-dom": "catalog:client",
-    "@types/node": "24.7.2"
+    "@types/node": "24.7.2",
+    "bun-types": "catalog:runtime"
   }
 }

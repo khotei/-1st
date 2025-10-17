@@ -7,10 +7,10 @@ import type {
   restaurantQuerySchema,
 } from "../models/restaurants-model.ts"
 
-export const searchRestaurants = (
+export const searchRestaurants = async (
   query: z.infer<typeof restaurantQuerySchema>,
 ) =>
-  drizzle
+  await drizzle
     .select()
     .from(schema.restaurants)
     .where(

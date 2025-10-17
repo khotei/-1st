@@ -15,9 +15,7 @@
         "@1st/database": "workspace:*",
         "@1st/env": "workspace:*",
         "@elysiajs/eden": "catalog:api",
-        "@types/lodash": "^4.14.177",
         "elysia": "catalog:api",
-        "lodash": "^4.17.21",
       },
       "devDependencies": {
         "bun-types": "catalog:runtime",
@@ -43,6 +41,7 @@
         "@types/react": "catalog:client",
         "@types/react-dom": "catalog:client",
         "babel-plugin-react-compiler": "catalog:client",
+        "bun-types": "catalog:runtime",
         "typescript": "catalog:runtime",
       },
     },
@@ -76,6 +75,7 @@
         "@types/react": "catalog:client",
         "@types/react-dom": "catalog:client",
         "babel-plugin-react-compiler": "catalog:client",
+        "bun-types": "catalog:runtime",
         "typescript": "catalog:runtime",
       },
     },
@@ -89,6 +89,7 @@
       },
       "devDependencies": {
         "@types/lodash": "4.17.20",
+        "bun-types": "catalog:runtime",
         "typescript": "catalog:runtime",
       },
     },
@@ -98,6 +99,7 @@
         "dotenv": "17.2.3",
       },
       "devDependencies": {
+        "bun-types": "catalog:runtime",
         "typescript": "catalog:runtime",
       },
     },

@@ -21,6 +21,7 @@
     "typescript": "catalog:runtime",
     "babel-plugin-react-compiler": "catalog:client",
     "@types/react": "catalog:client",
-    "@types/react-dom": "catalog:client"
+    "@types/react-dom": "catalog:client",
+    "bun-types": "catalog:runtime"
   }
 }

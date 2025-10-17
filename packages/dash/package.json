@@ -18,6 +18,7 @@
   },
   "devDependencies": {
     "typescript": "catalog:runtime",
-    "@types/lodash": "4.17.20"
+    "@types/lodash": "4.17.20",
+    "bun-types": "catalog:runtime"
   }
 }
