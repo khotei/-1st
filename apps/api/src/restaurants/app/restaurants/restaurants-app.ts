@@ -3,7 +3,7 @@ import { Elysia } from "elysia"
 import {
   restaurantParamsSchema,
   restaurantQuerySchema,
-} from "../../models/restaurants-model"
+} from "../../models/restaurnts/restaurants-model"
 import {
   findRestaurant,
   searchRestaurants,

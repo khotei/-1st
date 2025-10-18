@@ -14,11 +14,11 @@ export const searchRestaurants = async (
       query: isEmpty(query) ? undefined : query,
     })
 
-  if (data) {
-    return data
+  if (error) {
+    throw error
   }
 
-  throw error
+  return data
 }
 
 export const findRestaurant = async (
@@ -28,9 +28,9 @@ export const findRestaurant = async (
     .restaurants(params)
     .get()
 
-  if (data) {
-    return data
+  if (error) {
+    throw error
   }
 
-  throw error
+  return data
 }

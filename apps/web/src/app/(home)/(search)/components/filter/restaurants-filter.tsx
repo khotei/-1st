@@ -4,7 +4,7 @@ import {
   Input,
 } from "@1st/components/chakra"
 
-import { submitFilter } from "@/app/(home)/lib/filter-action"
+import { submitFilter } from "@/app/(home)/(search)/lib/filter-action"
 import { SubmitButton } from "@/components/submit-button"
 
 type RestaurantsFilterProps = {
@@ -17,7 +17,7 @@ export const RestaurantsFilter = (
   props: RestaurantsFilterProps,
 ) => {
   return (
-    <HStack align="stretch" asChild gap={2}>
+    <HStack align={"stretch"} asChild gap={2}>
       <form action={submitFilter}>
         <Field.Root>
           <Input

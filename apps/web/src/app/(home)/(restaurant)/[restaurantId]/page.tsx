@@ -1,3 +1,5 @@
+import { notFound } from "next/navigation"
+
 import { findRestaurant } from "@/api/restaurants/restaurants-api"
 
 export default async function RestaurantPage(
@@ -7,7 +9,9 @@ export default async function RestaurantPage(
     restaurantId: (await props.params).restaurantId,
   })
 
-  console.log(restaurant)
+  if (!restaurant) {
+    notFound()
+  }
 
   return <div>Hello</div>
 }

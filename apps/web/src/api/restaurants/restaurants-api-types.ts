@@ -1,5 +1,3 @@
-import "server-only"
-
 import type { Treaty } from "@elysiajs/eden"
 
 import type { apiSDK } from "@/lib/api-sdk"

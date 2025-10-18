@@ -1,3 +1,5 @@
+import { first as _first, defaultTo, pipe } from "lodash/fp"
+
 export {
   add,
   after,
@@ -64,7 +66,6 @@ export {
   findLast,
   findLastIndex,
   findLastKey,
-  first,
   flatMap,
   flatMapDeep,
   flatMapDepth,
@@ -189,6 +190,7 @@ export {
   partition,
   pick,
   pickBy,
+  pipe,
   property,
   propertyOf,
   pull,
@@ -294,3 +296,6 @@ export {
   zipObjectDeep,
   zipWith,
 } from "lodash/fp"
+
+export const first = <T>(rows: T[]) =>
+  pipe(_first<T>, defaultTo<T | null>(null))(rows)
