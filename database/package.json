@@ -5,8 +5,8 @@
   },
   "scripts": {
     "db:generate": "bunx --bun drizzle-kit generate --config=src/drizzle/drizzle-config.ts",
-    "db:migrate": "bun src/scripts/migrate.ts",
     "db:push": "bunx --bun drizzle-kit push --config=src/drizzle/drizzle-config.ts",
+    "db:migrate": "bun src/scripts/migrate.ts",
     "db:seed": "bun src/scripts/seed.ts",
     "db:reset": "bun src/scripts/reset.ts",
     "tsc": "tsc --noEmit",

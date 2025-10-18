@@ -17,7 +17,7 @@ export const restaurantsApp = new Elysia({
   .get(
     "search",
     async ({ query }) => {
-      return searchRestaurants(query)
+      return await searchRestaurants(query)
     },
     {
       query: restaurantQuerySchema,
@@ -26,7 +26,7 @@ export const restaurantsApp = new Elysia({
   .get(
     ":restaurantId",
     async ({ params }) => {
-      return findRestaurant(params)
+      return await findRestaurant(params)
     },
     {
       params: restaurantParamsSchema,

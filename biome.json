@@ -45,7 +45,7 @@
   "linter": {
     "rules": {
       "complexity": {
-        "useLiteralKeys": "info"
+        "useLiteralKeys": "off"
       },
       "recommended": true,
       "style": {

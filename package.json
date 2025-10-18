@@ -2,9 +2,9 @@
   "name": "1st",
   "scripts": {
     "bootstrap": "bun install",
-    "clean": "rm -rf node_modules && bun run --workspaces clean",
+    "clean": "rm -rf node_modules && bun --workspaces clean",
     "format": "biome check --write --unsafe",
-    "tsc": "bun run --workspaces tsc",
+    "tsc": "bun --workspaces tsc",
     "lint": "biome check",
     "prepare": "husky"
   },
